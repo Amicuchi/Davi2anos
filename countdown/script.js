@@ -22,16 +22,16 @@ let x = setInterval( () => {
     let s = Math.floor((distance % ((1000 * 60)) / (1000)));
     
     // output the results in elements with id
-    days.innerHTML = d + "<br /><span>dias</span>";
-    hours.innerHTML = h + "<br /><span>horas</span>";
-    minutes.innerHTML = m + "<br /><span>min</span>";
-    seconds.innerHTML = s + "<br /><span>seg</span>";
+    days.innerHTML = d + "<br><span>dias</span>";
+    hours.innerHTML = h + "<br><span>horas</span>";
+    minutes.innerHTML = m + "<br><span>min</span>";
+    seconds.innerHTML = s + "<br><span>seg</span>";
 
     // animate stroke
-    dd.style.strokeDashoffset = 440 - ( 440 * d ) / 10;
-    hh.style.strokeDashoffset = 440 - ( 440 * h ) / 24;
-    mm.style.strokeDashoffset = 440 - ( 440 * m ) / 60;
-    ss.style.strokeDashoffset = 440 - ( 440 * s ) / 60;
+    dd.style.strokeDashoffset = 440 - (( 440 * d ) / 10);
+    hh.style.strokeDashoffset = 440 - (( 440 * h ) / 24);
+    mm.style.strokeDashoffset = 440 - (( 440 * m ) / 60);
+    ss.style.strokeDashoffset = 440 - (( 440 * s ) / 60);
 
     // if the countdown is over, write some text
     if ( distance < 0 ){

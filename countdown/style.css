@@ -1,14 +1,11 @@
 #countdown{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #6b6b6b;
+    background: #cfcfcf;
     border-radius: 1rem;
     margin-top: 2px;
 }
 #time{
     display: flex;
+    justify-content: space-around;
     gap: 0.2rem;
 }
 #time .circle{
@@ -32,12 +29,12 @@
     stroke: #929292;
     stroke-width: 5;
     stroke-linecap: round;
-    transform: translate(5px, 5px);
+    transform: translate(4px, 4px);
 }
 #time .circle svg circle:nth-child(2){
     stroke: var(--clr);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
 }
 #time div{
     position: absolute;
@@ -60,7 +57,7 @@
     display: none;
     font-size: 2rem;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     line-height: 1.5rem;
     padding-top: 0.5rem;
