@@ -1,0 +1,71 @@
+#countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #6b6b6b;
+    border-radius: 1rem;
+    margin-top: 2px;
+}
+#time{
+    display: flex;
+    gap: 0.2rem;
+}
+#time .circle{
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #929292;
+    stroke-width: 5;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+#time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#time div{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(0, 2, 90);
+    font-size: 1rem;
+}
+#time div span{
+    position: absolute;
+    transform: translateX(-65%) translateY(-0.2rem);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.happyBirthday{
+    display: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+}
+.happyBirthday span{
+    font-size: 1rem;
+    font-weight: 300;
+}
